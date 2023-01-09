@@ -1,0 +1,27 @@
+<p>admin-home works!</p>
+
+
+<div>
+    <h3>Welcome, Admin</h3>
+
+    <h4> User Details</h4>
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.user_id}}</td>
+                <td>{{user.fullname}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

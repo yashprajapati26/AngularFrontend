@@ -1,0 +1,26 @@
+{
+  "books": [],
+  "seller": [
+    {
+      "fullname": "Riya Prajapati",
+      "email": "riyaprajapati1909@gmail.com",
+      "password": "123",
+      "cpassword": "123",
+      "id": 1
+    },
+    {
+      "fullname": "Yash Prajapati",
+      "email": "yash@gmail.com",
+      "password": "234",
+      "cpassword": "234",
+      "id": 2
+    },
+    {
+      "fullname": "jay",
+      "email": "jay@gmail.com",
+      "password": "123",
+      "cpassword": "123",
+      "id": 3
+    }
+  ]
+}

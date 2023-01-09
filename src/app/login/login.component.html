@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="user_login">
+    
+        <form #userLogin="ngForm" (ngSubmit)="user_login(userLogin.value)">
+    
+            <h3>
+                 Login
+            </h3>
+    
+            <p>{{msg}}</p>
+    
+            <div>
+                <input class="" type="email" name="email" placeholder="Email" ngModel required>
+            </div>
+    
+            <div>
+                <input class="" type="password" name="password" placeholder="Password" ngModel required>
+            </div>
+    
+    
+            <div>
+                <button class="">
+                   Login
+                </button>
+            </div>
+    
+    
+        </form>
+    </div>
+    </div>

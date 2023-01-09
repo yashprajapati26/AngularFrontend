@@ -1,0 +1,19 @@
+<h3>Welcome to our Book Store</h3>
+
+
+<div class="books_list">
+
+    <div class="card" *ngFor="let book of books">
+        <img src="..\assets\ss.png" alt="book_img" style="width:100%">
+        <div class="container">
+            <h4>{{book.title}}</h4>
+            <p>{{book.description}}</p>
+            <p>RS: {{book.price}}</p>
+            <button>View Book</button>
+            
+
+        </div>
+    </div>
+
+
+</div>

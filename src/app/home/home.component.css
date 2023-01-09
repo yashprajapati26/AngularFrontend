@@ -1,0 +1,20 @@
+.card{
+    box-shadow : 0 4px 8px 0 black;
+    transition: 0.3s;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.container{
+    padding:2px 16px;
+    margin: 12px 12px 12px 12px;
+}
+
+.books_list{
+    display: flex;
+    justify-content:space-around;
+}
+.container button{
+    margin-right:10px;
+    
+}
