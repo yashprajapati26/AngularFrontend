@@ -1,29 +1,24 @@
 <p>add-book works!</p>
-<form [formGroup]="bookForm" (ngSubmit)="addBook()" enctype="multipart/form-data">
+<form #BookForm="ngForm" (ngSubmit)="addBook(BookForm.value)" enctype="multipart/form-data">
     <div>
         <label>Book Title</label>
-        <input type="text" name="book_title" formControlName="title" required>
+        <input type="text" name="title" ngModel required>
     </div>
     <div>
         <label>Book Price</label>
-        <input type="text" name="book_price" formControlName="price"  required>
+        <input type="text" name="price" ngModel required>
 
     </div>
-    <!-- <div>
+    <div>
         <label>Book Image</label>
-        <input type="file" name="book_image" formControlName="book_image" (change)="onFileSelect($event)" required>
+        <input type="file" name="book_image" (change)="onFileSelect($event)" ngModel required>
 
-    </div> -->
+    </div>
     <div>
         <label>Book Description</label>
-        <textarea formControlName="description" name="description" rows=5 cols=20  required></textarea>
+        <textarea  name="description" rows=5 cols=20  ngModel required></textarea>
 
     </div>
 
     <button type="submit" >Add</button>
 </form>
-
-<p>-------------------------------------------------------------------</p>
-<!-- <form>
-    <input type="file" name="image" (change)="onFileSelect($event)">
-</form> -->
